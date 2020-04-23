@@ -45,6 +45,8 @@ export class NoReview extends LitElement {
           
           .noapointbutton {
             margin-top: 2%;
+            height: 13%;
+            width: 20%;
           }
     `;
     }

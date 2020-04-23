@@ -13,8 +13,8 @@ export class MyButton extends LitElement {
                 background: padding-box;
                 box-shadow: 0px 0px 15px #00000029;
                 border-radius: 24px;
-                width: 393px;
-                height: 89px;
+                width: 100%;
+                height: 100%;
                 color: #FFFFFF;
                 display: flex;
                 display: flex;
