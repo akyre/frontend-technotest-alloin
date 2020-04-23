@@ -18,6 +18,12 @@ export class AppFooter extends LitElement {
             .link-container {
                 width: 70%;
                 display: flex;
+                flex-direction: column;
+            }
+            
+            .category-container {
+                width: 100%;
+                display: flex;
                 flex-direction: row;
             }
             
@@ -47,6 +53,16 @@ export class AppFooter extends LitElement {
                 text-decoration: underline;
                 cursor: pointer;
             }
+            
+            .all-right-reserved {
+                font-family: 'Roboto', sans-serif;
+                color: #FFFFFF;
+                font-size: 16px;
+                font-weight: 300;
+                margin-top: 2%;
+                margin-left: 4%;
+                font-style: italic;
+            }
         `;
     }
 
@@ -54,23 +70,28 @@ export class AppFooter extends LitElement {
         return html`
             <div class="footer">
                 <div class="link-container">
-                    <div class="link-column">
-                        <div class="category-font">Products</div>
-                        <div class="link-font">Code review</div>
-                        <div class="link-font">Peer coding</div>
-                        <div class="link-font">Benchmarking</div>
-                        <div class="link-font">Analytics</div>
+                    <div class="category-container">
+                        <div class="link-column">
+                            <div class="category-font">Products</div>
+                            <div class="link-font">Code review</div>
+                            <div class="link-font">Peer coding</div>
+                            <div class="link-font">Benchmarking</div>
+                            <div class="link-font">Analytics</div>
+                        </div>
+                        <div class="link-column">
+                            <div class="category-font">Company</div>
+                            <div class="link-font">About us</div>
+                            <div class="link-font">Management</div>
+                            <div class="link-font">Newsroom</div>
+                            <div class="link-font">Contact us</div>
+                        </div>
+                        <div class="link-column">
+                            <div class="category-font">Ressources</div>
+                            <div class="link-font">Github</div>
+                        </div>
                     </div>
-                    <div class="link-column">
-                        <div class="category-font">Company</div>
-                        <div class="link-font">About us</div>
-                        <div class="link-font">Management</div>
-                        <div class="link-font">Newsroom</div>
-                        <div class="link-font">Contact us</div>
-                    </div>
-                    <div class="link-column">
-                        <div class="category-font">Ressources</div>
-                        <div class="link-font">Github</div>
+                    <div class="all-right-reserved">
+                        © 2019 Akyre - All rights reserved | Terms of Service | Privacy | Legal
                     </div>
                 </div>
                 <img src="/manifest/logo-footer.svg" alt="logo-footer"/>
