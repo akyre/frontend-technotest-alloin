@@ -1,7 +1,7 @@
 {
   "shell": "src/my-app.js",
   "entrypoint": "index.html",
-  "fragments": ["src/app-link.js", "src/app-main.js"],
+  "fragments": ["src/app-link.js", "src/app-main.js", "src/footer"],
   "npm": true,
   "moduleResolution": "node",
   "sources": ["src/start-lit-element.js", "manifest/**", "manifest.json", "package.json"],

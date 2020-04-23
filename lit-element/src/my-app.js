@@ -5,6 +5,7 @@ import { router } from "lit-element-router";
 
 import "./app-link";
 import "./app-main";
+import "./app-footer";
 
 class App extends router(LitElement) {
     static get properties() {
@@ -24,16 +25,8 @@ class App extends router(LitElement) {
                 data: { title: "Home" }
             },
             {
-                name: "info",
-                pattern: "info"
-            },
-            {
-                name: "user",
-                pattern: "user/:id"
-            },
-            {
-                name: "not-found",
-                pattern: "*"
+                name: "footer",
+                pattern: "footer"
             }
         ];
     }
@@ -56,17 +49,13 @@ class App extends router(LitElement) {
 
     render() {
         return html`
-      <app-link href="/">Home</app-link>
-      <app-link href="/info">Info</app-link>
-      <app-link href="/info?data=12345">Info?data=12345</app-link>
-      <app-link href="/user/14">user/14</app-link>
-
-      <app-main active-route=${this.route}>
-        <h1 route="home">Home</h1>
-        <h1 route="info">Info ${this.query.data}</h1>
-        <h1 route="user">User ${this.params.id}</h1>
-        <h1 route="not-found">Not Found</h1>
-      </app-main>
+          <app-link href="/">Home</app-link>
+          <app-link href="/footer">Footer</app-link>
+    
+          <app-main active-route=${this.route}>
+            <h1 route="home">Home</h1>
+            <h1 route="footer"><app-footer></app-footer></h1>
+          </app-main>
     `;
     }
 }
