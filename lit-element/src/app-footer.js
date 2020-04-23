@@ -29,7 +29,7 @@ export class AppFooter extends LitElement {
             }
             
             .category-font {
-                font-family: Regular 16px/19px Roboto;
+                font-family: 'Roboto', sans-serif;
                 color: #FFFFFF;
                 font-size: 16px;
                 margin-bottom: 20%;
@@ -75,7 +75,7 @@ export class AppFooter extends LitElement {
                 </div>
                 <img src="/manifest/logo-footer.svg" alt="logo-footer"/>
             </div>
-    `;
+        `;
     }
 }
 
