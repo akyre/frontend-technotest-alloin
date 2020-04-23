@@ -21,7 +21,11 @@ export class MyButton extends LitElement {
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
+            }
+            
+            .button-container:hover {
                 cursor: pointer;
+                opacity: 0.8;
             }
         `;
     }
