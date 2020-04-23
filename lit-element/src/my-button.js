@@ -21,6 +21,7 @@ export class MyButton extends LitElement {
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
+                cursor: pointer;
             }
         `;
     }
