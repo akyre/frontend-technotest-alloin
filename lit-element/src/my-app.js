@@ -6,7 +6,8 @@ import { router } from "lit-element-router";
 import "./app-link";
 import "./app-main";
 import "./app-footer";
-import "./no-review"
+import "./no-review";
+import "./app-message"
 
 class App extends router(LitElement) {
     static get properties() {
@@ -32,6 +33,10 @@ class App extends router(LitElement) {
             {
                 name: "review",
                 pattern: "review"
+            },
+            {
+                name: "message",
+                pattern: "message"
             }
         ];
     }
@@ -57,11 +62,13 @@ class App extends router(LitElement) {
           <app-link href="/">Home</app-link>
           <app-link href="/footer">Footer</app-link>
           <app-link href="/review">Review</app-link>
+          <app-link href="/message">Message</app-link>
     
           <app-main active-route=${this.route}>
             <h1 route="home">Home</h1>
             <h1 route="footer"><app-footer/></h1>
             <h1 route="review"><app-no-review title="Review"/></h1>
+            <h1 route="message"><app-message/></h1>
           </app-main>
     `;
     }
