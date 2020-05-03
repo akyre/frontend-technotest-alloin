@@ -1,0 +1,7 @@
+
+<div className="historyContainer">
+  <p className="title">Historic</p>
+  <div className="historyComponent">
+    <div className="historyPadding"/>
+  </div>
+</div>
