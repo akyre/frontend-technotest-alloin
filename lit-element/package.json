@@ -12,6 +12,7 @@
   "dependencies": {
     "@webcomponents/webcomponentsjs": "latest",
     "lit-element": "latest",
-    "lit-element-router": "^2.0.1"
+    "lit-element-router": "^2.0.1",
+    "moment": "^2.26.0"
   }
 }

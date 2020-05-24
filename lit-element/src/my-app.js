@@ -9,6 +9,7 @@ import "./app-footer";
 import "./no-review";
 import "./app-message";
 import "./app-historic"
+import "./app-appointment"
 
 class App extends router(LitElement) {
     static get properties() {
@@ -42,6 +43,10 @@ class App extends router(LitElement) {
             {
                 name: "historic",
                 pattern: "historic"
+            },
+            {
+                name: "appointment",
+                pattern: "appointment"
             }
         ];
     }
@@ -59,7 +64,6 @@ class App extends router(LitElement) {
         this.params = params;
         this.query = query;
         this.data = data;
-        console.log(route, params, query, data);
     }
 
     render() {
@@ -69,13 +73,14 @@ class App extends router(LitElement) {
           <app-link href="/review">Review</app-link>
           <app-link href="/message">Message</app-link>
           <app-link href="/historic">Historic</app-link>
-    
+          <app-link href="/appointment">Appointment</app-link>
           <app-main active-route=${this.route}>
             <h1 route="home">Home</h1>
             <h1 route="footer"><app-footer/></h1>
             <h1 route="review"><app-no-review title="Review"/></h1>
             <h1 route="message"><app-message/></h1>
             <h1 route="historic"><app-historic/></h1>
+            <h1 route="appointment"><app-appointment/></h1>
           </app-main>
     `;
     }
